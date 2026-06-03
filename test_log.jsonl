@@ -1,0 +1,87 @@
+I0603 12:20:49.752497 40559 server.go:1292] Starting language server process with pid 40559
+I0603 12:20:49.754403 40559 server.go:475] Language server will attempt to listen on host localhost
+I0603 12:20:49.757856 40559 server.go:489] Language server listening on random port at 43333 for HTTPS (gRPC)
+I0603 12:20:49.758005 40559 server.go:496] Language server listening on random port at 41417 for HTTP
+W0603 12:20:49.939572 40559 launchmanager.go:69] Entering local chrome mode! This is WRONG unless you are running tests or in eval mode on Linux.
+I0603 12:20:49.940307 40559 manager.go:92] Creating trajectory store manager with proto store and SQLite store
+E0603 12:20:49.942747 40559 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0603 12:20:49.943255 40559 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+W0603 12:20:49.943314 40559 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0603 12:20:49.943361 40559 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0603 12:20:49.943801 40559 server.go:2267] Auth succeeded, refreshing features and managers
+E0603 12:20:49.943940 40559 log.go:398] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+W0603 12:20:49.944338 40559 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+W0603 12:20:49.944404 40559 log_context.go:117] Cache(availableModels): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E0603 12:20:49.944449 40559 log.go:398] Failed to poll FetchAvailableModels: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0603 12:20:49.944809 40559 server.go:2273] State refresh took 0ms
+I0603 12:20:49.956300 40559 server.go:1928] initialized server successfully in 203.555732ms
+I0603 12:20:49.956769 40559 auto_updater.go:207] Last check was less than 15 minutes ago, skipping update
+I0603 12:20:49.956890 40559 common.go:104] Launching CLI mode
+E0603 12:20:49.956917 40559 common.go:123] Failed to resolve GeminiDir ".gemini": .gemini must be an absolute path: path is not absolute, falling back to default
+I0603 12:20:49.957079 40559 common.go:154] CLI app data directory: /home/berto/.gemini/antigravity-cli
+I0603 12:20:49.957179 40559 server.go:211] Creating CLI server backend: product=antigravity workspaceDirs=[/home/berto/t3code] appDataDir=/home/berto/.gemini/antigravity-cli cascadeManager=true codeAssist=true
+I0603 12:20:49.957358 40559 token_storage.go:55] Using file-based token storage because WSL environment detected
+W0603 12:20:49.957568 40559 log_context.go:117] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+W0603 12:20:49.957664 40559 log_context.go:117] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+I0603 12:20:49.957681 40559 project.go:154] project: discovered project "/home/berto/t3code" (id=c7bc2716-532c-4b76-830d-eba962d4281f) via cache
+I0603 12:20:49.957702 40559 server.go:1337] Backend project ID updated dynamically to: c7bc2716-532c-4b76-830d-eba962d4281f
+E0603 12:20:49.957700 40559 server.go:608] Failed to get OAuth token: error getting token source from auth provider: You are not logged into Antigravity.
+W0603 12:20:49.957733 40559 client.go:81] failed to set auth token
+I0603 12:20:49.958985 40559 printmode.go:71] Print mode: starting (promptLength=5, model="", conversationID="")
+I0603 12:20:49.959067 40559 manager.go:257] Initializing CLI store manager for workspace /home/berto/t3code
+I0603 12:20:49.959357 40559 cli_setting_manager.go:626] Skipping telemetry propagation because user is not logged in
+I0603 12:20:49.959408 40559 cli_setting_manager.go:66] CLI settings initialized: permissions=<nil>, toolPermission=request-review
+I0603 12:20:49.959694 40559 manager.go:350] CLI store manager initialized successfully
+I0603 12:20:49.959749 40559 printmode.go:164] Print mode: not authenticated, trying silent auth
+I0603 12:20:50.055263 40559 auth.go:114] ChainedAuth: authenticated via keyring (effective: keyring)
+I0603 12:20:50.055341 40559 server_oauth.go:212] applyAuthResult: email=davidebe03@gmail.com, authMethod=consumer, quotaProject=
+I0603 12:20:50.055354 40559 server_oauth.go:217] OAuth: authenticated successfully as davidebe03@gmail.com
+I0603 12:20:50.055363 40559 server_oauth.go:223] b.codeAssistClient.AuthProvider (0x3e66ae56b00) is same as b.cliAuth (0x3e66ae56b00)
+I0603 12:20:50.903722 40559 http_helpers.go:182] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc54a24cc8f03f974
+I0603 12:20:51.226564 40559 http_helpers.go:182] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf8299763a3d899e3
+I0603 12:20:51.227992 40559 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.1 Pro (High)"
+I0603 12:20:51.492708 40559 printmode.go:166] Print mode: silent auth succeeded
+I0603 12:20:51.492810 40559 input_loop.go:499] Auth done received, triggering experiment refresh
+I0603 12:20:51.492927 40559 experiment_manager.go:35] Starting experiment refresh after login
+I0603 12:20:51.660850 40559 experiment_manager.go:39] Experiments refreshed after login
+I0603 12:20:51.661004 40559 manager.go:975] Reloading system slash commands
+I0603 12:20:51.661058 40559 conversation_manager.go:288] Starting new conversation (agent=false)
+I0603 12:20:51.661157 40559 server.go:724] Creating new cascade trajectory (agentScript=false)
+I0603 12:20:51.661320 40559 server.go:727] Conversation using project ID: c7bc2716-532c-4b76-830d-eba962d4281f
+I0603 12:20:51.691399 40559 server.go:755] Created conversation 5b620a99-c6ba-48cd-bba8-ccf15472a14b
+I0603 12:20:51.692444 40559 server.go:1970] GetConversationDetail: found conversation 5b620a99-c6ba-48cd-bba8-ccf15472a14b in memory or locally
+I0603 12:20:51.692526 40559 conversation_manager.go:317] project: switching to conversation belonging to project ID: c7bc2716-532c-4b76-830d-eba962d4281f
+I0603 12:20:51.692578 40559 server.go:1337] Backend project ID updated dynamically to: c7bc2716-532c-4b76-830d-eba962d4281f
+E0603 12:20:51.692657 40559 conversation_manager.go:375] project: failed to add project resource folder "/home/berto/t3code" to workspace dynamically: failed to add workspace folder /home/berto/t3code: uri: file:///home/berto/t3code: path is already tracked
+I0603 12:20:51.692894 40559 conversation_manager.go:383] project: synced active project to "/home/berto/t3code" (id=c7bc2716-532c-4b76-830d-eba962d4281f) and updated workspace cache
+I0603 12:20:51.692944 40559 conversation_manager.go:471] Streaming conversation 5b620a99-c6ba-48cd-bba8-ccf15472a14b
+I0603 12:20:51.693188 40559 server.go:774] Starting conversation update stream for 5b620a99-c6ba-48cd-bba8-ccf15472a14b
+I0603 12:20:51.693253 40559 printmode.go:130] Print mode: conversation=5b620a99-c6ba-48cd-bba8-ccf15472a14b, sending message
+I0603 12:20:51.693271 40559 conversation_manager.go:414] Forwarding user message to conversation 5b620a99-c6ba-48cd-bba8-ccf15472a14b (items=1, media=0)
+I0603 12:20:51.693278 40559 server.go:1075] Sending user message to conversation 5b620a99-c6ba-48cd-bba8-ccf15472a14b (items=1, media=0)
+I0603 12:20:52.214186 40559 http_helpers.go:182] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x87718cb4007012c
+I0603 12:20:52.955328 40559 http_helpers.go:182] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc674e1cc2b140601
+I0603 12:20:53.037344 40559 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.1 Pro (High)"
+I0603 12:20:53.037526 40559 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.1 Pro (High)"
+I0603 12:20:53.284101 40559 input_loop.go:499] Auth done received, triggering experiment refresh
+I0603 12:20:53.284198 40559 experiment_manager.go:35] Starting experiment refresh after login
+I0603 12:20:53.285272 40559 input_loop.go:499] Auth done received, triggering experiment refresh
+I0603 12:20:53.285327 40559 experiment_manager.go:35] Starting experiment refresh after login
+I0603 12:20:53.377684 40559 model_config_manager.go:157] Propagating selected model override to backend: label="Gemini 3.1 Pro (High)"
+I0603 12:20:53.380855 40559 experiment_manager.go:39] Experiments refreshed after login
+I0603 12:20:53.380985 40559 manager.go:975] Reloading system slash commands
+I0603 12:20:53.382085 40559 manager.go:979] Slash commands unchanged, skipping update
+I0603 12:20:53.429514 40559 experiment_manager.go:39] Experiments refreshed after login
+I0603 12:20:53.429647 40559 manager.go:975] Reloading system slash commands
+I0603 12:20:53.430754 40559 manager.go:979] Slash commands unchanged, skipping update
+I0603 12:20:53.627335 40559 input_loop.go:499] Auth done received, triggering experiment refresh
+I0603 12:20:53.627412 40559 experiment_manager.go:35] Starting experiment refresh after login
+I0603 12:20:53.698700 40559 experiment_manager.go:39] Experiments refreshed after login
+I0603 12:20:53.698864 40559 manager.go:975] Reloading system slash commands
+I0603 12:20:53.699957 40559 manager.go:979] Slash commands unchanged, skipping update
+I0603 12:20:54.127669 40559 http_helpers.go:182] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x62ebf5ec65bcf8ec
+I0603 12:20:56.896229 40559 http_helpers.go:182] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0x9a80b9311994da0b
+I0603 12:20:57.287619 40559 http_helpers.go:182] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Trace: 0xe53387caedd872d
+I0603 12:20:57.510585 40559 manager.go:488] CLI store manager shutting down
+I0603 12:20:57.510962 40559 conversation_manager.go:439] Stopping conversation stream
+I0603 12:20:57.511343 40559 server.go:2174] Language server shutting down

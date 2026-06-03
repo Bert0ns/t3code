@@ -131,15 +131,17 @@ const CODEX_DRIVER_KIND = ProviderDriverKind.make("codex");
 const CLAUDE_DRIVER_KIND = ProviderDriverKind.make("claudeAgent");
 const CURSOR_DRIVER_KIND = ProviderDriverKind.make("cursor");
 const OPENCODE_DRIVER_KIND = ProviderDriverKind.make("opencode");
+const ANTIGRAVITY_DRIVER_KIND = ProviderDriverKind.make("antigravity");
 
 export const DEFAULT_MODEL = "gpt-5.4";
 export const DEFAULT_GIT_TEXT_GENERATION_MODEL = "gpt-5.4-mini";
 
 export const DEFAULT_MODEL_BY_PROVIDER: Partial<Record<ProviderDriverKind, string>> = {
-  [CODEX_DRIVER_KIND]: DEFAULT_MODEL,
-  [CLAUDE_DRIVER_KIND]: "claude-sonnet-4-6",
-  [CURSOR_DRIVER_KIND]: "auto",
-  [OPENCODE_DRIVER_KIND]: "openai/gpt-5",
+  [CODEX_DRIVER_KIND]: "gpt-4o",
+  [CLAUDE_DRIVER_KIND]: "claude-3-5-sonnet-20241022",
+  [CURSOR_DRIVER_KIND]: "claude-3-5-sonnet-20241022",
+  [OPENCODE_DRIVER_KIND]: "gpt-4o",
+  [ANTIGRAVITY_DRIVER_KIND]: "gemini-exp-1206",
 };
 
 /** Per-provider text generation model defaults. */
@@ -202,4 +204,5 @@ export const PROVIDER_DISPLAY_NAMES: Partial<Record<ProviderDriverKind, string>>
   [CLAUDE_DRIVER_KIND]: "Claude",
   [CURSOR_DRIVER_KIND]: "Cursor",
   [OPENCODE_DRIVER_KIND]: "OpenCode",
+  [ANTIGRAVITY_DRIVER_KIND]: "Antigravity",
 };
